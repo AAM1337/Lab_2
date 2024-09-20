@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val editTextNumber=findViewById<EditText>(R.id.editTextNumber)
+        val editTextNumber=findViewById<EditText>(R.id.editTextText)
         val Btn=findViewById<Button>(R.id.button)
 
         Btn.setOnClickListener{
@@ -47,7 +47,9 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 var Slag:Float=1.0f/voskl
-                Toast.makeText(this,"Сумма:$summ\n Последнее слагаемое:$Slag\n Кол-во повторений:$kol",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Сумма:$summ",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Последнее слагаемое:$Slag",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Кол-во повторений:$kol",Toast.LENGTH_LONG).show()
             }
             else{
                 Toast.makeText(this,"Вы не ввели число",Toast.LENGTH_LONG).show()
